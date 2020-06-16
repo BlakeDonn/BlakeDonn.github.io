@@ -47,6 +47,8 @@ body {
       }, false);
     </script>
 
+<br />
+
 <button id="upload_widget2" class="cloudinary-button">Famazing Race</button>
     <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
 
@@ -63,6 +65,45 @@ body {
         myWidget2.open();
       }, false);
     </script>
+
+<br />
+
+<button id="upload_widget3" class="cloudinary-button">Weddings</button>
+        <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+        var myWidget3 = cloudinary.createUploadWidget({
+          cloudName: 'Famcloud',
+          uploadPreset: 'weddings'}, (error, result) => {
+            if (!error && result && result.event === "success") {
+              console.log('Done! Here is the image info: ', result.info);
+            }
+          }
+        )
+        document.getElementById("upload_widget3").addEventListener("click", function(){
+            myWidget2.open();
+          }, false);
+        </script>
+
+<br />
+
+<button id="upload_widget4" class="cloudinary-button">Old stuff</button>
+          <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+          <script type="text/javascript">
+            var myWidget3 = cloudinary.createUploadWidget({
+              cloudName: 'Famcloud',
+              uploadPreset: 'oldstuff'}, (error, result) => {
+                if (!error && result && result.event === "success") {
+                  console.log('Done! Here is the image info: ', result.info);
+                }
+              }
+            )
+                document.getElementById("upload_widget4").addEventListener("click", function(){
+                    myWidget2.open();
+                  }, false);
+          </script>
+
 
     <!---<form action="upload.php" method="post" enctype="multipart/form-data">
       Select image to upload:
