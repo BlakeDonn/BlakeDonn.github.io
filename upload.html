@@ -45,9 +45,10 @@ body {
     document.getElementById("upload_widget").addEventListener("click", function(){
         myWidget.open();
       }, false);
-    </script> <br> <br> 
+    </script> <br> <br>
 
 <button id="upload_widget2" class="cloudinary-button">Famazing Race</button>
+
     <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -64,7 +65,8 @@ body {
       }, false);
     </script> <br> <br>
 
-<button id="upload_widget3" class="cloudinary-button">Weddings</button>
+    <button id="upload_widget3" class="cloudinary-button">Famazing Race</button>
+
         <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
 
         <script type="text/javascript">
@@ -81,11 +83,12 @@ body {
           }, false);
         </script> <br> <br>
 
-<button id="upload_widget4" class="cloudinary-button">Old stuff</button>
-          <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+        <button id="upload_widget4" class="cloudinary-button">Famazing Race</button>
 
-          <script type="text/javascript">
-            var myWidget3 = cloudinary.createUploadWidget({
+            <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+            var myWidget4 = cloudinary.createUploadWidget({
               cloudName: 'Famcloud',
               uploadPreset: 'oldstuff'}, (error, result) => {
                 if (!error && result && result.event === "success") {
@@ -93,17 +96,11 @@ body {
                 }
               }
             )
-                document.getElementById("upload_widget4").addEventListener("click", function(){
-                    myWidget2.open();
-                  }, false);
-          </script>
+            document.getElementById("upload_widget4").addEventListener("click", function(){
+                myWidget2.open();
+              }, false);
+            </script>
 
 
-    <!---<form action="upload.php" method="post" enctype="multipart/form-data">
-      Select image to upload:
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <input type="submit" value="Upload Image" name="submit">
-    </form>--->
-
-    </body>
-    </html>
+          </body>
+        </html>
