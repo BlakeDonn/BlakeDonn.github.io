@@ -2,7 +2,13 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+a {
+  color: white;
+  background-color: blue;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  font-size: 10px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -75,9 +81,10 @@ body {
   margin-top: 0;
   text-transform: uppercase;
 }
-.header2 p {
+.header2 h2 {
   color: #000000;
-  font-weight: 500;
+  font-size:20px;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 40px;
   margin-top: 300px;
