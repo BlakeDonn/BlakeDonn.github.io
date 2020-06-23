@@ -14,6 +14,12 @@ body {
   padding: 0 10px;
 }
 
+.container2 {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
 .header {
   background: url(https://i.imgur.com/3iawJV0.jpg) no-repeat center center;
   background-size: cover;
@@ -23,7 +29,8 @@ body {
 .header2 {
   background: url(https://i.imgur.com/qOLdyt0.png) no-repeat center center fixed;
   background-size: cover;
-  text-align: left;
+  height: 800px;
+  text-align: center;
 }
 
 .header .container {
@@ -31,8 +38,22 @@ body {
   top: 200px;
 }
 
+.header2 .container2 {
+  position: relative;
+  top: 200px;
+}
+
 .header h1 {
   color: #fff;
+  line-height: 100px;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.header2 h1 {
+  color: 000000;
   line-height: 100px;
   font-size: 80px;
   margin-top: 0;
@@ -50,9 +71,17 @@ body {
   color: #fff;
   font-weight: 500;
   letter-spacing: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
   margin-top: 0;
   text-transform: uppercase;
+}
+.header2 p {
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  margin-top: 300px;
+  text-align: center;
 }
 
 .btn {
@@ -91,6 +120,34 @@ body {
   cursor: pointer;
   transition: background .5s;
 }
+.nav2 {
+  background: url(https://i.imgur.com/qOLdyt0.png);
+  height: 80px;
+  width: 100%;
+}
+
+.nav2 ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav2 ul li {
+  color: #fff;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s;
+}
+
+.btn:hover, .nav2 ul li:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background .5s;
+}
 
 .main .container {
   margin: 80px auto;
@@ -104,48 +161,4 @@ body {
 .jumbotron .container {
   position: relative;
   top: 220px;
-}
-
-.jumbotron h2 {
-  color: #fff;
-  text-align: right;
-}
-
-.jumbotron p {
-  color: #fff;
-  text-align: right;
-}
-
-.jumbotron .btn {
-  margin: 10px 0 0;
-  float: right;
-}
-
-.footer {
-  background: #000;
-  height: 80px;
-  padding-bottom: 50px;
-}
-
-.footer p {
-  color: #fff;
-  font-size: 14px;
-  height: 80px;
-  line-height: 80px;
-  margin: 0;
-}
-
-@media (max-width: 500px) {
-  .header h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
-  .main, .jumbotron {
-    padding: 0 30px;
-  }
-
-  .main img {
-    width: 100%;
-  }
 }
