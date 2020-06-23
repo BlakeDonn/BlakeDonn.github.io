@@ -20,6 +20,11 @@ body {
   height: 800px;
   text-align: center;
 }
+.header2 {
+  background: url(https://i.imgur.com/qOLdyt0.png) no-repeat center center fixed;
+  background-size: cover;
+  text-align: left;
+}
 
 .header .container {
   position: relative;
@@ -94,12 +99,6 @@ body {
 .main img {
   float: left;
   margin: 50px 80px 50px 0;
-}
-
-.jumbotron {
-  background: url(https://i.imgur.com/3iawJV0.jpg) center center;
-  background-size: cover;
-  height: 600px;
 }
 
 .jumbotron .container {
